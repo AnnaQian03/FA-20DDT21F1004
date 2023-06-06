@@ -29,6 +29,7 @@ Partial Class Workouts_Form
         Me.SocialFormToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.PersonalInformationFormToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.LogOutToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.HomeToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.txtDuration = New System.Windows.Forms.TextBox()
         Me.Label2 = New System.Windows.Forms.Label()
@@ -37,7 +38,6 @@ Partial Class Workouts_Form
         Me.cmbType = New System.Windows.Forms.ComboBox()
         Me.txtNotes = New System.Windows.Forms.TextBox()
         Me.Label4 = New System.Windows.Forms.Label()
-        Me.HomeToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.MenuStrip1.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -79,6 +79,12 @@ Partial Class Workouts_Form
         Me.LogOutToolStripMenuItem.Name = "LogOutToolStripMenuItem"
         Me.LogOutToolStripMenuItem.Size = New System.Drawing.Size(62, 20)
         Me.LogOutToolStripMenuItem.Text = "&Log Out"
+        '
+        'HomeToolStripMenuItem
+        '
+        Me.HomeToolStripMenuItem.Name = "HomeToolStripMenuItem"
+        Me.HomeToolStripMenuItem.Size = New System.Drawing.Size(52, 20)
+        Me.HomeToolStripMenuItem.Text = "Home"
         '
         'Label1
         '
@@ -156,12 +162,6 @@ Partial Class Workouts_Form
         Me.Label4.TabIndex = 8
         Me.Label4.Text = "Notes"
         '
-        'HomeToolStripMenuItem
-        '
-        Me.HomeToolStripMenuItem.Name = "HomeToolStripMenuItem"
-        Me.HomeToolStripMenuItem.Size = New System.Drawing.Size(52, 20)
-        Me.HomeToolStripMenuItem.Text = "Home"
-        '
         'Workouts_Form
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -181,7 +181,7 @@ Partial Class Workouts_Form
         Me.MainMenuStrip = Me.MenuStrip1
         Me.Name = "Workouts_Form"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
-        Me.Text = "Workouts Form"
+        Me.Text = "git "
         Me.MenuStrip1.ResumeLayout(False)
         Me.MenuStrip1.PerformLayout()
         Me.ResumeLayout(False)

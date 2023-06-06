@@ -29,6 +29,7 @@ Partial Class Personal_Information_Form
         Me.SocialFormToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.PersonalInformationFormToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.LogOutToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.HomeToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.txtName = New System.Windows.Forms.TextBox()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.txtGender = New System.Windows.Forms.TextBox()
@@ -53,16 +54,15 @@ Partial Class Personal_Information_Form
         Me.txtResult = New System.Windows.Forms.TextBox()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Panel1 = New System.Windows.Forms.Panel()
-        Me.txtValue2 = New System.Windows.Forms.TextBox()
-        Me.Label11 = New System.Windows.Forms.Label()
-        Me.txtValue1 = New System.Windows.Forms.TextBox()
-        Me.Label7 = New System.Windows.Forms.Label()
-        Me.Label12 = New System.Windows.Forms.Label()
         Me.txtTotalBMI = New System.Windows.Forms.TextBox()
         Me.Label13 = New System.Windows.Forms.Label()
         Me.txtFinalResult = New System.Windows.Forms.TextBox()
         Me.Label14 = New System.Windows.Forms.Label()
-        Me.HomeToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.Label12 = New System.Windows.Forms.Label()
+        Me.txtValue2 = New System.Windows.Forms.TextBox()
+        Me.Label11 = New System.Windows.Forms.Label()
+        Me.txtValue1 = New System.Windows.Forms.TextBox()
+        Me.Label7 = New System.Windows.Forms.Label()
         Me.MenuStrip1.SuspendLayout()
         Me.Panel1.SuspendLayout()
         Me.SuspendLayout()
@@ -105,6 +105,12 @@ Partial Class Personal_Information_Form
         Me.LogOutToolStripMenuItem.Name = "LogOutToolStripMenuItem"
         Me.LogOutToolStripMenuItem.Size = New System.Drawing.Size(62, 20)
         Me.LogOutToolStripMenuItem.Text = "&Log Out"
+        '
+        'HomeToolStripMenuItem
+        '
+        Me.HomeToolStripMenuItem.Name = "HomeToolStripMenuItem"
+        Me.HomeToolStripMenuItem.Size = New System.Drawing.Size(52, 20)
+        Me.HomeToolStripMenuItem.Text = "Home"
         '
         'txtName
         '
@@ -338,52 +344,6 @@ Partial Class Personal_Information_Form
         Me.Panel1.Size = New System.Drawing.Size(399, 181)
         Me.Panel1.TabIndex = 40
         '
-        'txtValue2
-        '
-        Me.txtValue2.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.0!)
-        Me.txtValue2.Location = New System.Drawing.Point(108, 77)
-        Me.txtValue2.Name = "txtValue2"
-        Me.txtValue2.Size = New System.Drawing.Size(112, 30)
-        Me.txtValue2.TabIndex = 43
-        '
-        'Label11
-        '
-        Me.Label11.AutoSize = True
-        Me.Label11.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.0!)
-        Me.Label11.Location = New System.Drawing.Point(3, 82)
-        Me.Label11.Name = "Label11"
-        Me.Label11.Size = New System.Drawing.Size(74, 25)
-        Me.Label11.TabIndex = 42
-        Me.Label11.Text = "Weight"
-        '
-        'txtValue1
-        '
-        Me.txtValue1.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.0!)
-        Me.txtValue1.Location = New System.Drawing.Point(108, 41)
-        Me.txtValue1.Name = "txtValue1"
-        Me.txtValue1.Size = New System.Drawing.Size(112, 30)
-        Me.txtValue1.TabIndex = 41
-        '
-        'Label7
-        '
-        Me.Label7.AutoSize = True
-        Me.Label7.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.0!)
-        Me.Label7.Location = New System.Drawing.Point(3, 46)
-        Me.Label7.Name = "Label7"
-        Me.Label7.Size = New System.Drawing.Size(68, 25)
-        Me.Label7.TabIndex = 40
-        Me.Label7.Text = "Height"
-        '
-        'Label12
-        '
-        Me.Label12.AutoSize = True
-        Me.Label12.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.0!)
-        Me.Label12.Location = New System.Drawing.Point(81, 13)
-        Me.Label12.Name = "Label12"
-        Me.Label12.Size = New System.Drawing.Size(227, 25)
-        Me.Label12.TabIndex = 44
-        Me.Label12.Text = "Calculate Your Ideal BMI"
-        '
         'txtTotalBMI
         '
         Me.txtTotalBMI.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.0!)
@@ -422,11 +382,51 @@ Partial Class Personal_Information_Form
         Me.Label14.TabIndex = 45
         Me.Label14.Text = "Result"
         '
-        'HomeToolStripMenuItem
+        'Label12
         '
-        Me.HomeToolStripMenuItem.Name = "HomeToolStripMenuItem"
-        Me.HomeToolStripMenuItem.Size = New System.Drawing.Size(52, 20)
-        Me.HomeToolStripMenuItem.Text = "Home"
+        Me.Label12.AutoSize = True
+        Me.Label12.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.0!)
+        Me.Label12.Location = New System.Drawing.Point(81, 13)
+        Me.Label12.Name = "Label12"
+        Me.Label12.Size = New System.Drawing.Size(227, 25)
+        Me.Label12.TabIndex = 44
+        Me.Label12.Text = "Calculate Your Ideal BMI"
+        '
+        'txtValue2
+        '
+        Me.txtValue2.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.0!)
+        Me.txtValue2.Location = New System.Drawing.Point(108, 77)
+        Me.txtValue2.Name = "txtValue2"
+        Me.txtValue2.Size = New System.Drawing.Size(112, 30)
+        Me.txtValue2.TabIndex = 43
+        '
+        'Label11
+        '
+        Me.Label11.AutoSize = True
+        Me.Label11.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.0!)
+        Me.Label11.Location = New System.Drawing.Point(3, 82)
+        Me.Label11.Name = "Label11"
+        Me.Label11.Size = New System.Drawing.Size(74, 25)
+        Me.Label11.TabIndex = 42
+        Me.Label11.Text = "Weight"
+        '
+        'txtValue1
+        '
+        Me.txtValue1.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.0!)
+        Me.txtValue1.Location = New System.Drawing.Point(108, 41)
+        Me.txtValue1.Name = "txtValue1"
+        Me.txtValue1.Size = New System.Drawing.Size(112, 30)
+        Me.txtValue1.TabIndex = 41
+        '
+        'Label7
+        '
+        Me.Label7.AutoSize = True
+        Me.Label7.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.0!)
+        Me.Label7.Location = New System.Drawing.Point(3, 46)
+        Me.Label7.Name = "Label7"
+        Me.Label7.Size = New System.Drawing.Size(68, 25)
+        Me.Label7.TabIndex = 40
+        Me.Label7.Text = "Height"
         '
         'Personal_Information_Form
         '
